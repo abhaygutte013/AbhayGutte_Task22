@@ -4,313 +4,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Project Workspace</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0px);
+            }
+    
+            50% {
+                transform: translateY(-10px);
+            }
+    
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+    
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+    
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    
+        .float {
+            animation: floatUp 3s ease-in-out infinite;
+        }
+    
+        .fade {
+            animation: fadeIn 1s ease;
+        }
+    
+        .zoom {
+            animation: zoomIn 0.8s ease;
+        }
+    </style>
 </head>
 
-<body class="bg-purple-50">
+<body class="bg-white">
 
-    <nav class="sticky top-0 z-50 bg-white shadow-md">
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-200">
 
-        <div class="max-w-6xl mx-auto flex justify-between items-center p-5">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-8 py-4">
 
-            <h1 class="text-2xl font-bold text-purple-600">
+            <h1 class="text-xl font-bold">
                 + Project
             </h1>
 
-            <ul class="hidden md:flex gap-8">
+            <ul class="flex gap-8 text-gray-600">
 
-                <li>
-                    <a href="#" class="hover:text-purple-600">
-                        Home
-                    </a>
-                </li>
+                <li><a href="#" class="hover:text-black">Product</a></li>
 
-                <li>
-                    <a href="#about" class="hover:text-purple-600">
-                        About
-                    </a>
-                </li>
+                <li><a href="#" class="hover:text-black">Solutions</a></li>
 
-                <li>
-                    <a href="#services" class="hover:text-purple-600">
-                        Services
-                    </a>
-                </li>
+                <li><a href="#" class="hover:text-black">Resources</a></li>
 
-                <li>
-                    <a href="#contact" class="hover:text-purple-600">
-                        Contact
-                    </a>
-                </li>
+                <li><a href="#" class="hover:text-black">Pricing</a></li>
+
+                <li><a href="#" class=" font-bold text-black hover:font-medium">Log in</a></li>
 
             </ul>
 
-            <button class="bg-purple-600 text-white px-5 py-2 rounded hover:bg-purple-700">
-                Get Started
+            <button class="bg-black text-white px-5 py-2 rounded">
+                Get AI free
             </button>
 
         </div>
 
     </nav>
 
-    <section class="max-w-6xl mx-auto px-6 py-16">
+    <section class="bg-gradient-to-br from-orange-100 via-orange-50 to-white py-10">
 
-        <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="max-w-7xl mx-auto px-6 ">
 
-            <div>
+            <div class="text-center">
 
-                <p class="text-purple-600 font-semibold">
-                    Welcome
-                </p>
+            <h1 class="text-5xl font-bold leading-tight fade">
+                Write, plan, share.<br>
+                With AI at your side.
+            </h1>
 
-                <h1 class="text-5xl font-bold mt-4 leading-tight">
-                    Build Your Website
-                    <br>
-                    With Tailwind CSS
-                </h1>
+            <p class="mt-3 text-gray-600 max-w-2xl mx-auto fade">
+                It is the connected workspace where better,
+                faster work happens. Now with AI.
+            </p>
 
-                <p class="text-gray-600 mt-6">
-                    This is a simple landing page made using Tailwind CSS.
-                    It is responsive and easy to understand for beginners.
-                </p>
+            <div class="relative mt-5 inline-block fade">
+                    <button class="bg-black text-white px-6 py-3 rounded">
 
-                <div class="mt-8">
+                        Get AI free →
 
-                    <button class="bg-purple-600 text-white px-6 py-3 rounded hover:bg-purple-700">
-                        Learn More
                     </button>
-
+                    <button
+                        class="absolute left-48 top-0 bg-blue-600 text-white px-6 py-3 rounded shadow-md hover:bg-blue-700 transition whitespace-nowrap">
+                        Request a demo
+                    </button>
+                    
                 </div>
 
-            </div>
+                <div class="relative mt-10 flex justify-center">
 
-            <div class="relative flex justify-center">
-
-                <div class="w-72 h-72 rounded-full bg-purple-200"></div>
-
-            </div>
-
-        </div>
-
-    </section>
-            <div class="relative mt-10 md:mt-0 flex justify-center">
-            
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700" alt="Workspace"
-                    class="rounded-xl shadow-lg w-full max-w-md">
-            
-                <div class="absolute top-4 left-0 bg-white p-4 rounded-lg shadow-md hover:scale-105 transition duration-300">
-            
-                    <p class="text-sm text-gray-500">
-                        Projects
-                    </p>
-            
-                    <h3 class="text-xl font-bold text-purple-600">
-                        120+
-                    </h3>
-            
-                </div>
-            
-                <div class="absolute bottom-10 -right-2 bg-white p-4 rounded-lg shadow-md hover:scale-105 transition duration-300">
-            
-                    <p class="text-sm text-gray-500">
-                        Happy Users
-                    </p>
-            
-                    <h3 class="text-xl font-bold text-purple-600">
-                        500+
-                    </h3>
-            
-                </div>
-            
-                <div class="absolute -bottom-12 left-8 bg-white p-4 rounded-lg shadow-md hover:scale-105 transition duration-300">
-            
-                    <p class="text-sm text-gray-500">
-                        Experience
-                    </p>
-            
-                    <h3 class="text-xl font-bold text-purple-600">
-                        3 Years
-                    </h3>
-            
-                </div>
-            
-            </div>
-            
-            </section>
-            
-            <section id="about" class="bg-white py-16">
-            
-                <div class="max-w-6xl mx-auto px-6">
-            
-                    <h2 class="text-3xl font-bold text-center">
-                        Why Choose Us
-                    </h2>
-            
-                    <p class="text-center text-gray-600 mt-3">
-                        We build simple and responsive websites using Tailwind CSS.
-                    </p>
-            
-                    <div class="grid md:grid-cols-3 gap-8 mt-12">
-            
-                        <div class="bg-purple-100 p-6 rounded-lg hover:scale-105 transition duration-300">
-            
-                            <div class="text-4xl mb-3">
-                                💻
-                            </div>
-            
-                            <h3 class="text-xl font-semibold">
-                                Clean Design
-                            </h3>
-            
-                            <p class="text-gray-600 mt-2">
-                                Simple layout with proper spacing and colors.
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_YSeUKi76DvzXcUV4qzlH9ADDWVFTKN_55sW3XGwsg&s=10" alt="Project Workspace" class="w-[700px] rounded-lg shadow-xl zoom">
+                      
+                    <div
+                        class="absolute left-10 top-20 bg-white rounded-xl shadow-lg p-4 w-52 z-20 float transition duration-300 hover:scale-105">
+                        
+                            <p class="font-semibold text-sm">
+                                ✅ Tasks
                             </p>
-            
-                        </div>
-            
-                        <div class="bg-purple-100 p-6 rounded-lg hover:scale-105 transition duration-300">
-            
-                            <div class="text-4xl mb-3">
-                                📱
-                            </div>
-            
-                            <h3 class="text-xl font-semibold">
-                                Responsive
-                            </h3>
-            
-                            <p class="text-gray-600 mt-2">
-                                Works on desktop, tablet and mobile screens.
+                        
+                            <p class="text-gray-500 text-sm mt-2">
+                                12 tasks completed today
                             </p>
-            
+                        
                         </div>
-            
-                        <div class="bg-purple-100 p-6 rounded-lg hover:scale-105 transition duration-300">
-            
-                            <div class="text-4xl mb-3">
-                                ⚡
-                            </div>
-            
-                            <h3 class="text-xl font-semibold">
-                                Fast
-                            </h3>
-            
-                            <p class="text-gray-600 mt-2">
-                                Built with Tailwind CSS for quick development.
+                    
+                    <div class="absolute right-10 top-10 bg-white rounded-xl shadow-lg p-4 w-48 z-30 float transition duration-300 hover:scale-105"
+                        style="animation-delay:.3s;">
+                        
+                            <p class="font-semibold text-sm">
+                                ✔ Project Status
                             </p>
-            
+                        
+                            <p class="text-green-600 font-medium mt-2">
+                                On Track
+                            </p>
+                        
                         </div>
-            
-                    </div>
-            
-                </div>
-            
-            </section>
-                <section id="services" class="py-16">
-                
-                    <div class="max-w-6xl mx-auto px-6">
-                
-                        <h2 class="text-3xl font-bold text-center">
-                            Our Services
-                        </h2>
-                
-                        <p class="text-center text-gray-600 mt-3">
-                            We provide simple and modern web solutions.
-                        </p>
-                
-                        <div class="grid md:grid-cols-3 gap-8 mt-10">
-                
-                            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg hover:-translate-y-1 transition duration-300">
-                
-                                <h3 class="text-xl font-semibold mb-3">
-                                    Web Design
-                                </h3>
-                
-                                <p class="text-gray-600">
-                                    Clean and responsive website design using Tailwind CSS.
-                                </p>
-                
+                    
+                    <div class="absolute right-6 bottom-8 bg-white rounded-xl shadow-lg p-4 w-56 z-20 float transition duration-300 hover:scale-105"
+                        style="animation-delay:.6s;">
+                        
+                            <p class="font-semibold text-sm">
+                                Team Activity
+                            </p>
+                        
+                            <div class="flex items-center mt-3">
+                        
+                                <div class="flex -space-x-2">
+                        
+                                    <div class="w-8 h-8 rounded-full bg-red-300 border-2 border-white"></div>
+                        
+                                    <div class="w-8 h-8 rounded-full bg-blue-300 border-2 border-white"></div>
+                        
+                                    <div class="w-8 h-8 rounded-full bg-green-300 border-2 border-white"></div>
+                        
+                                </div>
+                        
+                                <span class="text-sm text-gray-500 ml-3">
+                                    +5 online
+                                </span>
+                        
                             </div>
-                
-                            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg hover:-translate-y-1 transition duration-300">
-                
-                                <h3 class="text-xl font-semibold mb-3">
-                                    UI Design
-                                </h3>
-                
-                                <p class="text-gray-600">
-                                    Simple user interface with modern layouts and colors.
-                                </p>
-                
-                            </div>
-                
-                            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg hover:-translate-y-1 transition duration-300">
-                
-                                <h3 class="text-xl font-semibold mb-3">
-                                    Responsive Layout
-                                </h3>
-                
-                                <p class="text-gray-600">
-                                    Websites that work on desktop, tablet and mobile devices.
-                                </p>
-                
-                            </div>
-                
+                        
                         </div>
-                
-                    </div>
-                
-                </section>
-                
-                <section id="contact" class="bg-purple-600 text-white py-16">
-                
-                    <div class="max-w-4xl mx-auto text-center px-6">
-                
-                        <h2 class="text-3xl font-bold">
-                            Contact Us
-                        </h2>
-                
-                        <p class="mt-4">
-                            Have a project? We'd love to hear from you.
-                        </p>
-                
-                        <button class="mt-8 bg-white text-purple-600 px-6 py-3 rounded hover:bg-gray-100 transition duration-300">
-                            Send Message
+                        
+                        </div>
+                        
+                        </div>
+                        
+                        </div>
+                        
+                        </section>
+                        
+                    <div class="fixed bottom-6 right-6 z-50 float">
+                    
+                        <button
+                            class="bg-black text-white w-14 h-14 rounded-full shadow-xl hover:bg-gray-800 transition duration-300 hover:scale-110">
+                    
+                            💬
+                    
                         </button>
-                
+                    
                     </div>
-                
-                </section>
-                
-                <footer class="bg-gray-900 text-white py-8">
-                
-                    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-                
-                        <p>
-                            © 2026 + Project. All Rights Reserved.
-                        </p>
-                
-                        <div class="flex gap-6 mt-4 md:mt-0">
-                
-                            <a href="#" class="hover:text-purple-400">
-                                Facebook
-                            </a>
-                
-                            <a href="#" class="hover:text-purple-400">
-                                Instagram
-                            </a>
-                
-                            <a href="#" class="hover:text-purple-400">
-                                Twitter
-                            </a>
-                
-                        </div>
-                
-                    </div>
-                
-                </footer>
-                
-                </body>
-                
-                </html>
+                        
+                        </body>
+                        
+                        </html>
