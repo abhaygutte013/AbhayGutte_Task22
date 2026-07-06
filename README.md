@@ -1,93 +1,44 @@
-# AbhayGutte_Task22
-# Project Landing Page using Tailwind CSS
+# Project Workspace
 
-## Project Overview
+## About
 
-This project is a responsive landing page created using HTML and Tailwind CSS. It is designed as a modern project management website with a navigation bar, hero section, call-to-action buttons, dashboard preview, floating information cards, and a chat button.
+This is a simple Project Workspace landing page made using HTML and Tailwind CSS.
 
 ## Features
 
-- Sticky navigation bar
-- Large hero heading and description
-- Two call-to-action buttons
-- Dashboard preview image
-- Floating cards for Tasks, Project Status, and Team Activity
-- Fixed chat button
-- Responsive layout using Tailwind CSS
-- Clean spacing and alignment
+- Sticky Navbar
+- Hero Section
+- Gradient Background
+- Two Buttons
+- Workspace Image
+- Floating Cards
+- Fixed Chat Button
 
-## Technologies Used
+## Tailwind CSS Classes Used
 
-- HTML5
-- Tailwind CSS (CDN)
-- Font Awesome Icons
-
-## Tailwind Utilities Used
-
-### Position Utilities
+- flex
 - relative
 - absolute
-- sticky
 - fixed
-
-### Spacing Utilities
-- p-
-- px-
-- py-
-- m-
-- mt-
-- mx-
-- gap-
-
-### Color Utilities
-- bg-
-- text-
-- border-
-
-### Other Utilities
-- flex
-- justify-center
-- justify-between
-- items-center
-- rounded
+- sticky
+- top-0
+- bottom-6
+- right-6
+- z-20
+- z-30
+- z-50
 - shadow
-- hover
-- overflow-hidden
+- rounded
 
-## Project Structure
+## What I Learned
 
-Project Folder
-│
-├── index.html
-└── README.md
+- How to use Tailwind CSS
+- How to create a responsive layout
+- How to use relative and absolute positioning
+- How to use fixed and sticky positions
+- How to add simple hover effects and animations
 
-## How to Run
+## Tools Used
 
-1. Download or clone the project.
-2. Open the project folder in Visual Studio Code.
-3. Make sure you have an internet connection because Tailwind CSS is loaded through the CDN.
-4. Open `index.html` in any web browser.
-
-## Output
-
-The webpage includes:
-
-- Navigation Bar
-- Hero Section
-- Action Buttons
-- Dashboard Image
-- Task Card
-- Project Status Card
-- Team Activity Card
-- Chat Button
-
-## Learning Outcome
-
-This project helped me understand:
-
-- Tailwind CSS utility classes
-- Responsive layouts
-- Position utilities
-- Flexbox
-- Spacing and alignment
-- Building a modern landing page using only HTML and Tailwind CSS
+- HTML
+- Tailwind CSS
