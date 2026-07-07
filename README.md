@@ -2,43 +2,45 @@
 
 ## About
 
-This is a simple Project Workspace landing page made using HTML and Tailwind CSS.
+This is a simple landing page made using HTML and Tailwind CSS.
+
+The page has a navigation bar, hero section, buttons, image and some information cards. I used only Tailwind CSS classes for designing the page.
 
 ## Features
 
-- Sticky Navbar
-- Hero Section
-- Gradient Background
-- Two Buttons
-- Workspace Image
-- Floating Cards
-- Fixed Chat Button
+- Navigation bar
+- Hero section
+- Two buttons
+- Project image
+- Three information cards
+- Chat button
+- Responsive layout
 
-## Tailwind CSS Classes Used
-
-- flex
-- relative
-- absolute
-- fixed
-- sticky
-- top-0
-- bottom-6
-- right-6
-- z-20
-- z-30
-- z-50
-- shadow
-- rounded
-
-## What I Learned
-
-- How to use Tailwind CSS
-- How to create a responsive layout
-- How to use relative and absolute positioning
-- How to use fixed and sticky positions
-- How to add simple hover effects and animations
-
-## Tools Used
+## Technologies Used
 
 - HTML
 - Tailwind CSS
+
+## What I Learned
+
+- How to use Tailwind CSS classes.
+- How to use Flexbox.
+- How to add spacing using margin and padding.
+- How to use different background and text colors.
+- How to position items using Tailwind classes.
+
+## Problems I Faced
+
+At first I used custom CSS animations, but later I understood that the assignment required only Tailwind CSS.
+
+I also found it difficult to place the cards around the image. After trying different Tailwind classes, I was able to arrange them properly.
+
+## Improvements
+
+- Add more sections.
+- Add dark mode.
+- Make the page more responsive.
+
+## Conclusion
+
+This project helped me understand the basics of Tailwind CSS. I learned how to build a simple webpage using only Tailwind utility classes without writing custom CSS.
