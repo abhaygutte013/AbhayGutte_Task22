@@ -1,185 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Project Workspace</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
-<body class="bg-white">
+<body class="bg-white text-gray-900">
 
     <!-- Navbar -->
+    <nav class="border-b border-gray-200">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
 
-    <nav class="border-b">
-
-        <div class="max-w-6xl mx-auto flex justify-between items-center p-5">
-
-            <h1 class="text-xl font-bold">
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold">
                 + Project
             </h1>
 
-            <ul class="flex gap-6">
-
-                <li>
-                    <a href="#" class="text-gray-600 hover:text-black">
-                        Product
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="text-gray-600 hover:text-black">
-                        Solutions
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="text-gray-600 hover:text-black">
-                        Resources
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="text-gray-600 hover:text-black">
-                        Pricing
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="font-semibold">
-                        Log in
-                    </a>
-                </li>
-
+            <!-- Navigation -->
+            <ul class="flex items-center gap-8 text-gray-600">
+                <li><a href="#" class="hover:text-black">Product</a></li>
+                <li><a href="#" class="hover:text-black">Solutions</a></li>
+                <li><a href="#" class="hover:text-black">Resources</a></li>
+                <li><a href="#" class="hover:text-black">Pricing</a></li>
+                <li><a href="#" class="hover:text-black font-medium">Log in</a></li>
             </ul>
 
-            <button class="bg-black text-white px-4 py-2 rounded">
-                Get AI Free
+            <!-- Button -->
+            <button class="bg-black text-white px-5 py-2 rounded-md hover:bg-gray-800 transition">
+                Get AI free
             </button>
 
         </div>
-
     </nav>
 
     <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-orange-100 to-white py-16">
 
-    <section class="bg-gradient-to-br from-orange-100 to-white py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
 
-        <div class="max-w-6xl mx-auto px-6 text-center">
-
-            <h1 class="text-5xl font-bold">
-
+            <h2 class="text-5xl font-bold leading-tight">
                 Write, plan, share.<br>
-
                 With AI at your side.
+            </h2>
 
-            </h1>
-
-            <p class="text-gray-600 mt-5">
-
-                It is the connected workspace where better,
-                faster work happens. Now with AI.
-
+            <p class="mt-6 text-gray-600 text-lg">
+                It is the connected workspace where better, faster work
+                happens. Now with AI.
             </p>
 
-            <div class="mt-6">
+            <!-- Buttons -->
+            <div class="mt-8">
 
-                <button class="bg-black text-white px-5 py-2 rounded">
-
-                    Get AI Free →
-
+                <button class="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition">
+                    Get AI free →
                 </button>
 
-                <button class="bg-blue-600 text-white px-5 py-2 rounded ml-3 hover:bg-blue-700">
-
-                    Request a Demo
-
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-md ml-4 hover:bg-blue-700 transition">
+                    Request a demo
                 </button>
 
             </div>
 
-            <div class="relative flex justify-center mt-12">
+            <!-- Workspace Image -->
+            <div class="relative flex justify-center mt-16">
 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_YSeUKi76DvzXcUV4qzlH9ADDWVFTKN_55sW3XGwsg&s=10"
-                    alt="Workspace" class="w-[650px] rounded-lg shadow">
-                                    <!-- Left Card -->
-                                    
-                                    <div class="absolute left-0 top-16 bg-white border rounded-lg p-4 shadow w-44 hover:shadow-lg transition">
-                                    
-                                        <p class="font-semibold">
-                                            ✅ Tasks
-                                        </p>
-                                    
-                                        <p class="text-sm text-gray-500 mt-2">
-                                            12 tasks completed today
-                                        </p>
-                                    
-                                    </div>
-                                    
-                                    <!-- Right Top Card -->
-                                    
-                                    <div class="absolute right-0 top-8 bg-white border rounded-lg p-4 shadow w-44 hover:shadow-lg transition">
-                                    
-                                        <p class="font-semibold">
-                                            ✔ Project Status
-                                        </p>
-                                    
-                                        <p class="text-green-600 mt-2">
-                                            On Track
-                                        </p>
-                                    
-                                    </div>
-                                    
-                                    <!-- Right Bottom Card -->
-                                    
-                                    <div class="absolute right-0 bottom-8 bg-white border rounded-lg p-4 shadow w-52 hover:shadow-lg transition">
-                                    
-                                        <p class="font-semibold">
-                                            Team Activity
-                                        </p>
-                                    
-                                        <div class="flex items-center mt-3">
-                                    
-                                            <div class="flex -space-x-2">
-                                    
-                                                <div class="w-8 h-8 rounded-full bg-red-300 border-2 border-white"></div>
-                                    
-                                                <div class="w-8 h-8 rounded-full bg-blue-300 border-2 border-white"></div>
-                                    
-                                                <div class="w-8 h-8 rounded-full bg-green-300 border-2 border-white"></div>
-                                    
-                                            </div>
-                                    
-                                            <span class="text-sm text-gray-500 ml-3">
-                                                +5 Online
-                                            </span>
-                                    
-                                        </div>
-                                    
-                                    </div>
-                                    
-                                    </div>
-                                    
-                                    </div>
-                                    
-                                    </section>
-                                    
-                                    <div class="fixed bottom-6 right-6">
-                                    
-                                        <button class="bg-black text-white w-12 h-12 rounded-full shadow hover:bg-gray-800 transition">
-                                    
-                                            💬
-                                    
-                                        </button>
-                                    
-                                    </div>
-                                    
-                                    </body>
-                                    
-                                    </html>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_YSeUKi76DvzXcUV4qzlH9ADDWVFTKN_55sW3XGwsg&s=10"
+                    alt="Workspace"
+                    class="w-[700px] rounded-xl shadow-lg">
+
+                <!-- Left Card -->
+                <div class="absolute left-0 top-16 bg-white w-48 rounded-xl border shadow-md p-4 hover:shadow-lg transition">
+
+                    <h3 class="font-semibold">
+                        ✅ Tasks
+                    </h3>
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        12 tasks completed today
+                    </p>
+
+                </div>
+
+                <!-- Right Top Card -->
+                <div class="absolute right-0 top-8 bg-white w-48 rounded-xl border shadow-md p-4 hover:shadow-lg transition">
+
+                    <h3 class="font-semibold">
+                        ✔ Project Status
+                    </h3>
+
+                    <p class="text-green-600 font-medium mt-2">
+                        On Track
+                    </p>
+
+                </div>
+
+                <!-- Right Bottom Card -->
+                <div class="absolute right-0 bottom-8 bg-white w-56 rounded-xl border shadow-md p-4 hover:shadow-lg transition">
+
+                    <h3 class="font-semibold">
+                        Team Activity
+                    </h3>
+
+                    <div class="flex items-center mt-4">
+
+                        <div class="flex -space-x-2">
+
+                            <div class="w-8 h-8 rounded-full bg-red-300 border-2 border-white"></div>
+
+                            <div class="w-8 h-8 rounded-full bg-blue-300 border-2 border-white"></div>
+
+                            <div class="w-8 h-8 rounded-full bg-green-300 border-2 border-white"></div>
+
+                        </div>
+
+                        <span class="ml-3 text-sm text-gray-500">
+                            +5 online
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Chat Button -->
+    <div class="fixed bottom-6 right-6">
+
+        <button class="w-14 h-14 rounded-full bg-black text-white shadow-lg hover:bg-gray-800 transition">
+            💬
+        </button>
+
+    </div>
+
+</body>
+</html>
